@@ -1,0 +1,55 @@
+# Dynamic Text Input in C
+
+This program demonstrates how to read an arbitrary length text input from standard input using dynamic memory allocation.
+
+## Overview
+
+The function `readtext()` reads characters from the keyboard using `getchar()` until a newline character (`'\n'`) is encountered.
+The entered characters are stored in a dynamically allocated buffer that automatically grows if the input exceeds the current buffer size.
+
+The function returns a pointer to the dynamically allocated string.
+
+## Key Concepts
+
+This implementation demonstrates several important concepts in C:
+
+* dynamic memory allocation with `malloc`
+* resizing allocated memory using `realloc`
+* reading input character-by-character with `getchar`
+* manual construction of a null-terminated string
+* error handling for failed memory allocation
+* using `stderr` for error messages
+* terminating programs with `exit(EXIT_FAILURE)`
+
+## How the Program Works
+
+1. A buffer is allocated with an initial size.
+2. Characters are read from standard input using `getchar()`.
+3. Each character is stored in the buffer.
+4. If the buffer becomes full, its size is increased using `realloc`.
+5. When a newline character is detected, the input ends.
+6. A null terminator (`'\0'`) is added to create a valid C string.
+
+## Memory Management
+
+Memory is dynamically managed during runtime:
+
+* `malloc()` allocates the initial buffer
+* `realloc()` increases the buffer size when needed
+* the buffer is resized to the exact length of the input before returning
+
+## Error Handling
+
+If memory allocation fails (`malloc` or `realloc` returns `NULL`), the program:
+
+1. prints an error message to `stderr`
+2. terminates using `exit(EXIT_FAILURE)`
+
+## Learning Goals
+
+This program helps practice:
+
+* dynamic memory management
+* handling user input safely
+* working with pointers
+* understanding how strings are stored in C
