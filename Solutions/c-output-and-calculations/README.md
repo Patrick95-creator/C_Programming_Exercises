@@ -1,4 +1,4 @@
-# Exercise 02 – Text Output and Calculations
+# Exercise 01 – Text Output and Calculations
 
 Course: **Introduction to Programming in C (WS 24/25)**
 
