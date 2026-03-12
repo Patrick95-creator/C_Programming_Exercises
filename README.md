@@ -1,2 +1,11 @@
 # C_Programming_Exercises
-Exercises from the course "Introduction to Programming in C"
+
+This repository contains my solutions for the course
+"Introduction to Programming in C".
+
+The original exercise sheets are not included because
+they belong to the university.
+
+## Structure
+
+solutions/ → my solutions for each exercise sheet
