@@ -1,6 +1,6 @@
 # C_Programming_Exercises
 
-This repository contains my solutions for the course
+This repository contains some of my solutions for the course
 "Introduction to Programming in C".
 
 The original exercise sheets are not included because
